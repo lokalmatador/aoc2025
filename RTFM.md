@@ -29,3 +29,5 @@ Also, the `parse` method could be extended to display what you want for each sol
 
 ## Solving other years
 This repo can be used to setup past years aswell, the only downside is that you need to change the `YEAR = 2022` variable on `src/utils/api.py`.
+
+Thanks to [tomfran](https://github.com/tomfran) for providing this solution, which you can find [here](https://github.com/tomfran/advent-of-code-setup).

@@ -1,7 +1,7 @@
 import os
 import re
 
-base_link = "https://github.com/lokalmatador/aoc2024/blob/master/src/"
+base_link = "https://github.com/lokalmatador/aoc2024/blob/main/src/"
 
 
 def parse(e):

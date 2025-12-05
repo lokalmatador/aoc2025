@@ -4,3 +4,4 @@ Problems list:
 2. [Day 02](https://github.com/lokalmatador/aoc2025/blob/main/src/day02.py)
 3. [Day 03](https://github.com/lokalmatador/aoc2025/blob/main/src/day03.py)
 4. [Day 04](https://github.com/lokalmatador/aoc2025/blob/main/src/day04.py)
+5. [Day 05](https://github.com/lokalmatador/aoc2025/blob/main/src/day05.py)

@@ -1,4 +1,4 @@
-from day09 import *
+from day10 import *
 
 if __name__ == '__main__':
     print(f"Part 1: {part1()}")

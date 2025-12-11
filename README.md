@@ -10,3 +10,4 @@ Problems list:
 8. [Day 08](https://github.com/lokalmatador/aoc2025/blob/main/src/day08.py)
 9. [Day 09](https://github.com/lokalmatador/aoc2025/blob/main/src/day09.py)
 10. [Day 10](https://github.com/lokalmatador/aoc2025/blob/main/src/day10.py)
+11. [Day 11](https://github.com/lokalmatador/aoc2025/blob/main/src/day11.py)

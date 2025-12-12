@@ -1,10 +1,11 @@
-from utils.api import *
-from concurrent.futures import ThreadPoolExecutor, as_completed
 import textwrap
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+from utils.api import *
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(2)
+input_str = get_input(2)
 
 # WRITE YOUR SOLUTION HERE
 
@@ -20,7 +21,7 @@ def part1() -> int:
 
         return res
 
-    ranges = get_input(2).split(",")
+    ranges = input_str.split(",")
     l_tasks = []
     res = 0
 
@@ -48,8 +49,7 @@ def part2() -> int:
 
         return sum(res)
 
-
-    ranges = get_input(2).split(",")
+    ranges = input_str.split(",")
     l_tasks = []
     res = 0
 

@@ -1,17 +1,15 @@
+from shapely import Polygon
+
 from utils.api import *
-from shapely import Polygon, Point
-from itertools import product
-
-
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(9)
+input_str = get_input(9)
 
 # WRITE YOUR SOLUTION HERE
 
 def part1() -> int:
-    points = [(int(x[0]), int(x[1])) for x in [x.split(",") for x in get_input(9).splitlines()]]
+    points = [(int(x[0]), int(x[1])) for x in [x.split(",") for x in input_str.splitlines()]]
 
     res = 0
     for i in range(len(points)):
@@ -25,7 +23,7 @@ def part1() -> int:
 
 
 def part2() -> int:
-    points = [tuple(int(i) for i in x.split(",") if i != "") for x in get_input(9).splitlines()]
+    points = [tuple(int(i) for i in x.split(",") if i != "") for x in input_str.splitlines()]
     p = Polygon(points)
 
     res = 0

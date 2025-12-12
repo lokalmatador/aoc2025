@@ -1,17 +1,14 @@
-from operator import truediv
-
 from utils.api import *
-import numpy
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(4)
+input_str = get_input(4)
 
 # WRITE YOUR SOLUTION HERE
 
 def part1() -> int:
     grid = dict()
-    for i, l in enumerate(get_input(4).splitlines()):
+    for i, l in enumerate(input_str.splitlines()):
         for j, e in enumerate(l):
             grid[(i, j)] = e
 
@@ -27,7 +24,7 @@ def part2() -> int:
     removed = True
     grid = dict()
 
-    for i, l in enumerate(get_input(4).splitlines()):
+    for i, l in enumerate(input_str.splitlines()):
         for j, e in enumerate(l):
             grid[(i, j)] = e
 

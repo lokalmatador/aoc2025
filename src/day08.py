@@ -1,15 +1,15 @@
-from utils.api import *
 from scipy.spatial.distance import euclidean
-import itertools
+
+from utils.api import *
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(8)
+input_str = get_input(8)
 
 # WRITE YOUR SOLUTION HERE
 
 def part1() -> int:
-    boxes = [[int(c) for c in x.split(",")] for x in get_input(8).splitlines()]
+    boxes = [[int(c) for c in x.split(",")] for x in input_str.splitlines()]
     N = len(boxes)
     p = [i for i in range(N)]
     size = [1] * N
@@ -27,7 +27,7 @@ def part1() -> int:
 
 
 def part2() -> int:
-    boxes = [[int(c) for c in x.split(",")] for x in get_input(8).splitlines()]
+    boxes = [[int(c) for c in x.split(",")] for x in input_str.splitlines()]
     N = len(boxes)
     p = [i for i in range(N)]
     size = [1] * N

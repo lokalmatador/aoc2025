@@ -2,12 +2,12 @@ from utils.api import *
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(5)
+input_str = get_input(5)
 
 # WRITE YOUR SOLUTION HERE
 
 def part1() -> int:
-    ranges, ids = get_input(5).split("\n\n")
+    ranges, ids = input_str.split("\n\n")
     ids = [int(x) for x in ids.splitlines()]
     ranges = [(int(x.split("-")[0]), int(x.split("-")[1])) for x in ranges.splitlines()]
 
@@ -22,7 +22,7 @@ def part1() -> int:
 
 
 def part2() -> int:
-    ranges, _ = get_input(5).split("\n\n")
+    ranges, _ = input_str.split("\n\n")
     ranges = [(int(x.split("-")[0]), int(x.split("-")[1])) for x in ranges.splitlines()]
     ranges.sort(key=lambda x: x[0])
 

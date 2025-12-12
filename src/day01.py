@@ -2,13 +2,12 @@ from utils.api import *
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(1)
-
+input_str = get_input(1)
 
 # WRITE YOUR SOLUTION HERE
 
 def part1() -> int:
-    moves = get_test_input().split()
+    moves = input_str.split()
     pos = 50
     res = 0
 
@@ -21,7 +20,7 @@ def part1() -> int:
 
 
 def part2() -> int:
-    moves = get_input(1).split()
+    moves = input_str.split()
     pos = 50
     res = 0
 

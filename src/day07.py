@@ -1,14 +1,15 @@
-from utils.api import *
 import numpy as np
+
+from utils.api import *
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(7)
+input_str = get_input(7)
 
 # WRITE YOUR SOLUTION HERE
 
 def part1() -> int:
-    rows = get_input(7).splitlines()
+    rows = input_str.splitlines()
     current = list(rows[0].replace("S", "|"))
     res = 0
 
@@ -28,7 +29,7 @@ def part1() -> int:
 
 
 def part2() -> int:
-    data = np.array([list(row) for row in get_input(7).splitlines()])
+    data = np.array([list(row) for row in input_str.splitlines()])
     manifold = np.zeros_like(data, dtype=np.int64)
     manifold[data == 'S'] = 1
 

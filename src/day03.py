@@ -2,12 +2,12 @@ from utils.api import *
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(3)
+input_str = get_input(3)
 
 # WRITE YOUR SOLUTION HERE
 
 def part1() -> int:
-    racks = get_input(3).split()
+    racks = input_str.split()
     res = 0
 
     for rack in racks:
@@ -18,7 +18,7 @@ def part1() -> int:
 
 
 def part2() -> int:
-    racks = get_input(3).split()
+    racks = input_str.split()
     res = 0
 
     for rack in racks:

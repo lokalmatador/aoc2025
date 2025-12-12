@@ -1,13 +1,14 @@
+import functools
 import operator
+import re
+
+import numpy as np
 
 from utils.api import *
-import re
-import numpy as np
-import functools
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(6)
+input_str = get_input(6)
 
 # WRITE YOUR SOLUTION HERE
 
@@ -15,7 +16,7 @@ def part1() -> int:
     def parse(line):
         return list(map(lambda x: x.strip(), filter(None, re.split(r" {1,}", line))))
 
-    lines = get_input(6).splitlines()
+    lines = input_str.splitlines()
     operators = parse(lines[-1])
     res = list(map(lambda x: 1 if x == '*' else 0, operators))
 
@@ -33,7 +34,7 @@ def part2() -> int:
         if '*' in op: return functools.reduce(operator.mul, nums, 1)
         else: return functools.reduce(operator.add, nums, 0)
 
-    lines = get_input(6).splitlines()
+    lines = input_str.splitlines()
     operators = re.split(r'(?=\S)', lines[-1])[1:]
     offset = 0
     res = 0

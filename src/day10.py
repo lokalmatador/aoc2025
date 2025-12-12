@@ -1,18 +1,19 @@
-from utils.api import *
-import numpy as np
 import re
 from itertools import chain, combinations
+
+import numpy as np
 from scipy.optimize import milp, LinearConstraint, Bounds
 
+from utils.api import *
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(10)
+input_str = get_input(10)
 
 # WRITE YOUR SOLUTION HERE
 
 def part1() -> int:
-    machines = get_input(10).splitlines()
+    machines = input_str.splitlines()
 
     res = 0
     for machine in machines:
@@ -42,7 +43,7 @@ def find_buttons1(machine):
 
 
 def part2() -> int:
-    machines = get_input(10).splitlines()
+    machines = input_str.splitlines()
 
     res = 0
     for machine in machines:

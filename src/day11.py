@@ -4,12 +4,12 @@ from utils.api import *
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
-# input_str = get_input(11)
+input_str = get_input(11)
 
 # WRITE YOUR SOLUTION HERE
 
 def part1() -> int:
-    devices = dict([(x[0], x[1].split(" ")) for x in [y.split(": ") for y in get_input(11).splitlines()]])
+    devices = dict([(x[0], x[1].split(" ")) for x in [y.split(": ") for y in input_str.splitlines()]])
 
     @cache
     def dfs(node: str) -> int:
@@ -21,7 +21,7 @@ def part1() -> int:
 
 
 def part2() -> int:
-    devices = dict([(x[0], x[1].split(" ")) for x in [y.split(": ") for y in get_input(11).splitlines()]])
+    devices = dict([(x[0], x[1].split(" ")) for x in [y.split(": ") for y in input_str.splitlines()]])
 
     @cache
     def dfs(node: str, fft: bool, dac: bool) -> int:

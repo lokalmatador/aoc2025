@@ -1,5 +1,4 @@
 from utils.api import *
-import math
 
 input_str = get_test_input()
 # UNCOMMENT THE FOLLOWING LINE TO READ THE ACTUAL INPUT
